@@ -1,11 +1,11 @@
 module.exports = function getZerosCount(number, base) {
   // your implementation
   zeroConditionNumber = getdevider(base);
-  count = 0;
+  count = -1;
   for (j = zeroConditionNumber; (number/j) > 0; j=j*zeroConditionNumber){
     count = count + number/j;
   }
-  return Math.trunc(count);
+  return Math.floor(count);
 };
 
 function getdevider(k){
