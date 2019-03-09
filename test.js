@@ -1,3 +1,4 @@
+//jshint esversion:6
 const assert = require('assert');
 Object.freeze(assert);
 const getZerosCount = require('./src/index');
