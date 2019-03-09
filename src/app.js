@@ -1,12 +1,15 @@
-module.exports = function getZerosCount(number, base) {
-  // your implementation
+//hshint esversion:6
+function getZeroCount(number, base){
   zeroConditionNumber = getdevider(base);
-  count = 0;
+  count = -1;
   for (j = zeroConditionNumber; (number/j) > 0; j=j*zeroConditionNumber){
-    count = count + Math.floor(number/j);
+    count = count + number/j;
   }
-  return Math.floor(count);
-};
+  return Math.(count)-1;
+}
+
+console.log(getZeroCount(98707942,218));
+
 
 function getdevider(k){
   result =[];
